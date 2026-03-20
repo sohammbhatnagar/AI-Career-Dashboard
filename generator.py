@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from google import genai
 
 # Securely load environment variables
-load_dotenv()
+load_dotenv(override=True)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def generate_document(name, target_role, skills, experience, doc_type):
